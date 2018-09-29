@@ -1,0 +1,15 @@
+﻿方法1、
+卸载：pip3 uninstall Appium-Python-Client
+安装：pip3 install Appium-Python-Client==0.26
+
+
+方法2、
+打开python，在site-packages -->selenium-->common-->exceptions.py中直接定义了InvalidArgumentException，添加代码如下
+class InvalidArgumentException(WebDriverException):
+    """
+    """
+    pass
+
+
+
+
